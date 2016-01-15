@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>React.js Jobs and Careers</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row navbar">
+      <div class="three columns">
+        <p class="site-title">React Careers</p>
+        <span class="site-subtitle">React.js Careers & Jobs</span>
+      </div>
+      <div class="nine columns">
+        <ul class="nav">
+          <li><a class="button button-primary" href="https://docs.google.com/forms/d/1aHV1GnT_JJ_WsPkr9LA-Unt6IAu5poUBiCEb_Yk3bmw/viewform">Post a Job</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main"></div>
+
+    <p class="footer">ReactCareers.com is an independent entity and has not been authorized, sponsored, or otherwise approved by Facebook or React.js.</p>
+  </div>
+
+  <!-- Job View -->
+  <script id="job-template" type="x-template">
+    <div class="row job">
+      <h4 class="job_title"></h4>
+      <span class="job_company"></span>
+      <span class="job_location"></span>
+      <div class="job_type"></div>
+      <div class="job_url"></div>
+      <div class="job_description"></div>
+    </div>
+  </script>
+
+  <!-- Notify View -->
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.2/tabletop.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

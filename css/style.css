@@ -1,0 +1,78 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+ul.nav {
+    list-style: none;
+    text-align: right;
+}
+ul.nav li {
+	display: inline;
+}
+.navbar {
+    margin: 1.2em 0;
+}
+p.site-title {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+span.site-subtitle {
+    font-size: 14px;
+    margin-top: -4px;
+    display: block;
+    color: #777;
+}
+.site-title:before {
+    background-image: url('http://daynin.github.io/clojurescript-presentation/img/react-logo.png');
+    background-size: 32px 32px;
+    width: 34px;
+    height: 34px;
+    content: "";
+    margin-top: 2px;
+    display: block;
+    float: left;
+}
+.row.job:hover {
+    border: 1px solid #77DFFB;
+}
+.job {
+    border: 1px solid #D7D7D7;
+    margin: 12px 0px;
+    padding: 14px 20px;
+    position: relative;
+    height: auto;
+}
+.job_title {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.job_url {
+	display: none;
+	margin-top: 10px;
+}
+.job_company {
+	font-weight: bold;
+}
+.job_location {
+ 	font-size: 12px;
+	font-style: italic;
+}
+.job_description {
+    margin-top: 14px;
+    display: none;
+}
+.job_type {
+    font-size: 12px;
+    display: block;
+    float: right;
+    color: #fff;
+    background: #4F4F4F;
+    padding: 3px 10px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+p.footer {
+    font-size: 10px;
+    color: #777;
+    text-align: center;
+}
