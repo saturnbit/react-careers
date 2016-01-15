@@ -3,18 +3,20 @@ $(function() {
 	function renderJobs(jobs) {
 		var $main = $('.main');
 
+		console.log(jobs);
+
 		$main.hide();
 		jobs.forEach(function(job){
 			if(job.Active == 1) {
 				var tpl = $('#job-template').html(),
 					$tpl = $(tpl);
 
-				$tpl.find('.job_title').text(job.Job_Title);
-				$tpl.find('.job_company').text(job.Company);
-				$tpl.find('.job_type').text(job.Job_Type);
-				$tpl.find('.job_location').text(job.Location);
-				$tpl.find('.job_url').html('<a href="' + job.URL + '" target="_blank">View Job -></a>');
-				$tpl.find('.job_description').text(job.Job_Description);
+				$tpl.find('.job_title').text(job['Job Title']);
+				$tpl.find('.job_company').text(job['Company']);
+				$tpl.find('.job_type').text(job['Job Type']);
+				$tpl.find('.job_location').text(job['Location']);
+				$tpl.find('.job_url').html('<a href="' + job['URL'] + '" target="_blank">View Job -></a>');
+				$tpl.find('.job_description').text(job['Job Description']);
 
 				$tpl.on('click', function (e) {
 					$tpl.find('.job_url').toggle();
