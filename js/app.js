@@ -3,8 +3,6 @@ $(function() {
 	function renderJobs(jobs) {
 		var $main = $('.main');
 
-		console.log(jobs);
-
 		$main.hide();
 		jobs.forEach(function(job){
 			if(job.Active == 1) {
@@ -23,7 +21,7 @@ $(function() {
 					$tpl.find('.job_description').toggle();
 				});
 
-				$('.main').append($tpl);
+				$('.main').prepend($tpl);
 			}
 		});
 		$main.fadeIn(300);
