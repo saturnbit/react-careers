@@ -56,6 +56,12 @@ span.site-subtitle {
  	font-size: 12px;
 	font-style: italic;
 }
+.job_contact {
+    display: none;
+}
+.job_contact a {
+	text-decoration: none;
+}
 .job_description {
     margin-top: 14px;
     display: none;

@@ -13,12 +13,14 @@ $(function() {
 				$tpl.find('.job_company').text(job['Company']);
 				$tpl.find('.job_type').text(job['Job Type']);
 				$tpl.find('.job_location').text(job['Location']);
-				$tpl.find('.job_url').html('<a href="' + job['URL'] + '" target="_blank">View Job -></a>');
+				$tpl.find('.job_url').html('<a class="button button-primary" href="' + job['URL'] + '" target="_blank">View Job -></a>');
+				$tpl.find('.job_contact').html('<b>Contact Info: </b><a href="mailto:' + job['Contact Info'] + '">' + job['Contact Info'] + '</a>');
 				$tpl.find('.job_description').text(job['Job Description']);
 
 				$tpl.on('click', function (e) {
 					$tpl.find('.job_url').toggle();
 					$tpl.find('.job_description').toggle();
+					$tpl.find('.job_contact').toggle();
 				});
 
 				$('.main').prepend($tpl);
