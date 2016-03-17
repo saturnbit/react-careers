@@ -2,6 +2,7 @@ $(function() {
 
 	function renderJobs(jobs) {
 		var $main = $('.main');
+		var $loader = $('.loader');
 
 		$main.hide();
 		jobs.forEach(function(job){
@@ -26,6 +27,7 @@ $(function() {
 				$('.main').prepend($tpl);
 			}
 		});
+		$loader.hide();
 		$main.fadeIn(300);
 	}
 
